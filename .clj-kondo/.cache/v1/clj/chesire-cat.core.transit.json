@@ -1,1 +1,1 @@
-["^ ","~$init",["^ ","~:row",3,"~:col",1,"~:fixed-arities",["~#set",[0]],"~:name","^0","~:ns","~$chesire-cat.core","~:top-ns","^7","~:type","~:fn"],"~:filename","C:\\Users\\Leonardo\\chesire-cat\\src\\chesire_cat\\core.clj"]
+["^ ","~$-main",["^ ","~:row",10,"~:col",1,"~:fixed-arities",["~#set",[0]],"~:name","^0","~:ns","~$chesire-cat.core","~:top-ns","^7","~:arities",["^ ","~i0",["^ ","~:ret","~:fn","~:arglist-str","[]"]],"~:type","^;"],"~:filename","C:\\Users\\Leonardo\\chesire-cat\\src\\chesire_cat\\core.clj"]

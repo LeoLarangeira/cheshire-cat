@@ -4,21 +4,24 @@
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
             [cheshire.core :as json]
             [ring.middleware.json :as ring-json]
-            [ring.util.response :as rr]))
+            [ring.util.response :as rr]
+            [handler.planets.planet :as planet-handler]))
 
 
 
-(defroutes app-routes
-    (GET "/" [] (slurp "resources/public/index.html"))
-  (route/resources "/")
-  (route/not-found "Not Found"))
+(defroutes app-routes 
+  (GET "/" [] (slurp "resources/public/index.html")) 
+  (GET "/earth" [] (planet-handler/earth-route))
+  (route/not-found "Not Found")
+ )
 
 
-
-;(def app
-;  (wrap-defaults app-routes site-defaults))
 
 (def app 
   (-> app-routes
       (ring-json/wrap-json-response)
       (wrap-defaults site-defaults)))
+
+(defn create-route []
+  (routes
+   (GET "/earth" request (planet-handler/earth-route))))

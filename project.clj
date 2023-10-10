@@ -8,6 +8,7 @@
                  [cheshire "5.12.0"]
                  [ring/ring-json "0.5.1"]
                  [org.clojure/clojurescript "1.11.121"]]
+  :main ^:skip-aot cheshire.core
   :plugins [[lein-ring "0.12.5"]]
   :ring {:handler chesire-cat.handler/app}
   :profiles
