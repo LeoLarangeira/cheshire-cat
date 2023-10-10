@@ -7,12 +7,10 @@
             [ring.util.response :as rr]))
 
 
-(GET "/cheshire-cat" [] "Smile!")
 
 (defroutes app-routes
-  (GET "/" [] "Hello World")
-  (GET "/cheshire-cat" [] 
-    (rr/response {:name "Cheshire Cat" :status :grinning}))
+    (GET "/" [] (slurp "resources/public/index.html"))
+  (route/resources "/")
   (route/not-found "Not Found"))
 
 
