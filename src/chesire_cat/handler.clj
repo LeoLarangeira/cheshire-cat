@@ -12,6 +12,7 @@
 (defroutes app-routes 
   (GET "/" [] (slurp "resources/public/index.html")) 
   (GET "/earth" [] (planet-handler/earth-route))
+  (GET "/mercury" [] (planet-handler/mercury-route))
   (route/not-found "Not Found")
  )
 

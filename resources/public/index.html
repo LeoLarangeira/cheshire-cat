@@ -15,21 +15,24 @@
     <section class="planet" id="planet1">
         <h2>Mercury</h2>
         <img src="images/merc.jpg" alt="Mercury image">
-        <p>A Terra é o terceiro planeta a partir do Sol e é o único planeta conhecido a abrigar vida.</p>
+        <p>Mercury is the smallest planet in our solar system, located closest to the Sun. It has a barren, rocky surface.</p>
+        <button id="mercButton" class="myButton">Go to detailed information about Mercury</button>
     </section>
 
 
     <section class="planet" id="planet2">
         <h2>Venus</h2>
         <img src="images/venus.jpg" alt="Venus image">
-        <p>A Terra é o terceiro planeta a partir do Sol e é o único planeta conhecido a abrigar vida.</p>
+        <p>Venus is often referred to as Earth's "sister planet" due to its similar size and composition. However, it has a thick, toxic atmosphere.</p>
+        <button id="venusButton" class="myButton">Go to detailed information about Venus</button>
     </section>
 
 
     <section class="planet" id="planet3">
         <h2>Earth</h2>
         <img src="images/earth.jpg" alt="Earth Image">
-        <p>A Terra é o terceiro planeta a partir do Sol e é o único planeta conhecido a abrigar vida.</p>
+        <p>Earth is the third planet from the Sun and is the only known planet to support life. It has a diverse range of ecosystems.</p>
+        <button id="earthButton" class="myButton">Go to detailed information about Earth</button>
     </section>
 
 
@@ -37,7 +40,8 @@
     <section class="planet" id="planet4">
         <h2>Mars</h2>
         <img src="images/mars.jpg" alt="Mars Image">
-        <p>A Terra é o terceiro planeta a partir do Sol e é o único planeta conhecido a abrigar vida.</p>
+        <p> Mars is often called the "Red Planet" due to its reddish appearance. It has a thin atmosphere and is a focus of astrobiology.</p>
+        <button id="marsButton" class="myButton">Go to detailed information about Mars</button>
     </section>
 
 
@@ -45,7 +49,8 @@
     <section class="planet" id="planet5">
         <h2>Jupiter</h2>
         <img src="images/jupiter.jpg" alt="Jupiter Image">
-        <p>Júpiter é o maior planeta do Sistema Solar e é composto principalmente de gás.</p>
+        <p>Jupiter is the largest planet in the solar system and consists mainly of gas. It has a turbulent atmosphere and a strong magnetic field.</p>
+        <button id="jupiterButton" class="myButton">Go to detailed information about Jupiter</button>
     </section>
 
 
@@ -54,23 +59,52 @@
     <section class="planet" id="planet6">
         <h2>Saturn</h2>
         <img src="images/saturn.jpg" alt="Saturn Image">
-        <p>Júpiter é o maior planeta do Sistema Solar e é composto principalmente de gás.</p>
+        <p>Saturn is known for its spectacular ring system, which consists of ice and rock particles. It's a gas giant like Jupiter.</p>
+        <button id="saturnButton" class="myButton">Go to detailed information about Saturn</button>
     </section>
 
 
     <section class="planet" id="planet7">
         <h2>Uranus</h2>
         <img src="images/uranus.jpg" alt="Uranus Image">
-        <p>Júpiter é o maior planeta do Sistema Solar e é composto principalmente de gás.</p>
+        <p>Uranus is unique among the planets because it rotates on its side. It's an ice giant with a pale blue-green appearance.</p>
+        <button id="uranusButton" class="myButton">Go to detailed information about Uranus</button>
     </section>
 
 
     <section class="planet" id="planet8">
         <h2>Neptune</h2>
         <img src="images/neptune.jpg" alt="Neptune Image">
-        <p>Júpiter é o maior planeta do Sistema Solar e é composto principalmente de gás.</p>
+        <p>Neptune is the farthest planet from the Sun and is another ice giant. It has a dynamic atmosphere and is known for its Great Dark Spot.</p>
+        <button id="neptuneButton" class="myButton">Go to detailed information about Neptune</button>
     </section>
-
+    <script>
+        // JavaScript code to handle the button click
+        document.getElementById("earthButton").onclick = function() {
+            window.location.href = "/earth"; // Redirect to the "/earth" page
+        };
+        document.getElementById('neptuneButton').onclick = function(){
+            window.location.href = "/neptune";
+        };
+        document.getElementById('uranusButton').onclick = function(){
+            window.location.href = '/uranus';
+        };
+        document.getElementById('saturnButton').onclick = function(){
+            window.location.href = '/saturn';
+        };
+        document.getElementById('jupiterButton').onclick = function(){
+            window.location.href = "/jupiter";
+        };
+        document.getElementById('marsButton').onclick = function(){
+            window.location.href = '/mars';
+        };
+        document.getElementById('venusButton').onclick = function(){
+            window.location.href = '/venus';
+        };
+        document.getElementById('mercButton').onclick = function(){
+            window.location.href = '/mercury';
+        };
+    </script>
     <footer>
         <p>&copy; 2023 Solar System</p>
     </footer>
