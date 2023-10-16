@@ -12,7 +12,13 @@
 (defroutes app-routes 
   (GET "/" [] (slurp "resources/public/index.html")) 
   (GET "/earth" [] (planet-handler/earth-route))
-  (GET "/mercury" [] (planet-handler/mercury-route))
+  (GET "/mercury" [] (planet-handler/mercury-route)) 
+  (GET "/mars" [] (planet-handler/mars-route))
+  (GET "/venus" [] (planet-handler/venus-route))
+  (GET "/jupiter" [] (planet-handler/jupiter-route))
+  (GET "/saturn" [] (planet-handler/saturn-route))
+  (GET "/uranus" [] (planet-handler/uranus-route))
+  (GET "/neptune" [] (planet-handler/neptune-route))
   (route/not-found "Not Found")
  )
 
@@ -25,4 +31,9 @@
 
 (defn create-route []
   (routes
-   (GET "/earth" request (planet-handler/earth-route))))
+   (GET "/earth" [] (planet-handler/earth-route))
+   (GET "/mars" [] (planet-handler/mars-route)) 
+   (GET "/mercury" [] (planet-handler/mercury-route))
+   )
+  
+  )

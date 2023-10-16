@@ -9,5 +9,5 @@
 
 (defn -main
   []
-  (handler-master/create-route)
+  (handler-master/app-routes)
   )
